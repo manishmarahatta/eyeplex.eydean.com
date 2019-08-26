@@ -1,0 +1,54 @@
+//Variables
+@font-family : Roboto,
+sans-serif;
+@primary-color  : #db3636;
+@secondary-color: #363262;
+@faded-color    : #9b9b9b;
+
+.small-text {
+    font-size: 0.8rem;
+}
+
+.nav-item {
+    font-size: 0.8rem;
+    color: @faded-color;
+
+    a {
+        text-decoration: none;
+        color: @faded-color;
+    &:hover {
+        color: black;
+    }
+
+    }
+
+    svg {
+        height: 32px;
+        width : 32px;
+        fill  : @secondary-color;
+
+    }
+
+    &:hover,
+    &.active {
+        svg {
+            fill: @primary-color;
+        }
+    }
+
+    .form-control {
+        display         : block;
+        width           : 100%;
+        height          : calc(1.5em + .75rem + 2px);
+        padding         : .375rem .75rem;
+        font-size       : 0.8rem;
+        font-weight     : 400;
+        line-height     : 1.5;
+        color           : @faded-color;
+        background-color: #fff;
+        background-clip : padding-box;
+        border          : 1px solid black;
+        border-radius   : 0px;
+        transition      : border-color .15s ease-in-out, box-shadow .15s ease-in-out
+    }
+}
