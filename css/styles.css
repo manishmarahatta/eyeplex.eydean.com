@@ -97,3 +97,15 @@
   right: 2%;
   border: none;
 }
+#testimonials {
+  margin-top: 10rem;
+}
+#testimonials .slick-prev:before,
+#testimonials .slick-next:before {
+  font-family: 'slick';
+  font-size: 20px;
+  line-height: 1;
+  color: #CC2626;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

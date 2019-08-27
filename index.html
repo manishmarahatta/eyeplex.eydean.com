@@ -9,6 +9,9 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/styles.css">
@@ -182,7 +185,16 @@
             </div>
         </div>
         <div class="container" id="testimonials">
-            
+            <div class="brand-slider">
+                <div><img src="images/nike.png" alt=""></div>
+                <div><img src="images/adidas.png" alt=""></div>
+                <div><img src="images/levis.png" alt=""></div>
+                <div><img src="images/puma.png" alt=""></div>
+                <div><img src="images/rayban.png" alt=""></div>
+                <div><img src="images/burberry.png" alt=""></div>
+                <div><img src="images/nike.png" alt=""></div>
+                <div><img src="images/adidas.png" alt=""></div>
+            </div>
         </div>
     </main>
 
@@ -192,6 +204,18 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.brand-slider').slick({
+                slidesToShow: 6,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+            });
+        });
+    </script>
 </body>
 
 </html>
