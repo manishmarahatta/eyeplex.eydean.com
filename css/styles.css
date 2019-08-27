@@ -36,10 +36,15 @@
   border-radius: 0px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
+@media all and (min-width: 1900px) {
+  .container {
+    max-width: 1730px;
+  }
+}
 .masthead {
   height: 100vh;
   min-height: 500px;
-  background-image: url("../images/masthead.jpg");
+  background-image: url("../images/masthead.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -56,11 +61,39 @@
   font-weight: 400;
   font-size: 100px;
   color: #363362;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
 }
 .masthead .banner-text .following-text {
   font-weight: 700;
   font-size: 100px;
   color: #CC2626;
   padding-left: 3rem;
-  margin-top: -0.7rem;
+  margin-top: -1rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+}
+#stores .stores-row .col {
+  height: 480px;
+}
+#stores .header-row {
+  font-weight: 400;
+  font-size: 41px;
+}
+#stores .store-card {
+  position: relative;
+}
+#stores .visit-btn {
+  position: absolute;
+  height: 2.8rem;
+  display: block;
+  width: 15rem;
+  background: #D12F2F;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 2px;
+  bottom: 2%;
+  right: 2%;
+  border: none;
 }
