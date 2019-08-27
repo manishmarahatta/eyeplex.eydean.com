@@ -99,6 +99,7 @@
 }
 #testimonials {
   margin-top: 10rem;
+  margin-bottom: 5rem;
 }
 #testimonials .slick-prev:before,
 #testimonials .slick-next:before {
@@ -108,4 +109,28 @@
   color: #CC2626;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+#offers {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+#offers .offers-banner {
+  height: 50vh;
+  min-height: 250px;
+  background-image: url("../images/offers-banner.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+#offers .overlay-div {
+  background-color: #7B9AC9;
+  height: 100%;
+  opacity: 0.3;
+}
+#offers .overlay-div .offer-box {
+  color: white;
+  position: absolute;
+  top: 50%;
+  right: 50%;
 }
