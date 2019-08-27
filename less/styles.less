@@ -1,8 +1,7 @@
 //Variables
-@font-family : Roboto,
-sans-serif;
-@primary-color  : #db3636;
-@secondary-color: #363262;
+@font-family : "Roboto", sans-serif;
+@primary-color  : #CC2626;
+@secondary-color: #363362;
 @faded-color    : #9b9b9b;
 
 .small-text {
@@ -11,14 +10,15 @@ sans-serif;
 
 .nav-item {
     font-size: 0.8rem;
-    color: @faded-color;
+    color    : @faded-color;
 
     a {
         text-decoration: none;
-        color: @faded-color;
-    &:hover {
-        color: black;
-    }
+        color          : @faded-color;
+
+        &:hover {
+            color: black;
+        }
 
     }
 
@@ -50,5 +50,37 @@ sans-serif;
         border          : 1px solid black;
         border-radius   : 0px;
         transition      : border-color .15s ease-in-out, box-shadow .15s ease-in-out
+    }
+}
+
+.masthead {
+    height             : 100vh;
+    min-height         : 500px;
+    background-image   : url("../images/masthead.jpg");
+    background-size    : cover;
+    background-position: center;
+    background-repeat  : no-repeat;
+    position: relative;
+
+    .banner-text {
+        position: absolute;
+        top: 45%;
+        right: 10%;
+        z-index: 200;
+        line-height: 50px;
+
+        .lead-text {
+            font-weight: 400;
+            font-size: 100px;
+            color: @secondary-color;    
+        }
+
+        .following-text {
+            font-weight: 700;
+            font-size: 100px;
+            color: @primary-color;
+            padding-left: 3rem;
+            margin-top: -0.7rem;
+        }
     }
 }
