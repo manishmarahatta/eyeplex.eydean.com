@@ -157,6 +157,16 @@ body {
   font-weight: 400;
   color: #727272;
 }
+#cinemas .cinema-info span {
+  font-size: 26px;
+}
+#cinemas .cinema-info div {
+  font-size: 16px;
+}
+#food {
+  margin-top: 10rem !important;
+  margin-bottom: 10rem !important;
+}
 @media (min-width: 1900px) {
   #cinemas {
     height: 500px;
