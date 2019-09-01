@@ -128,19 +128,24 @@ body {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
 }
 #offers .overlay-div {
   background-color: #7B9AC9;
-  height: 100%;
   opacity: 0.3;
+  height: 100%;
   z-index: 100;
 }
-#offers .overlay-div .offer-box {
+#offers .offer-box h3 {
+  font-weight: 700;
   color: white;
   position: absolute;
-  top: 50%;
-  right: 50%;
+  font-size: 100px;
+  top: 33%;
+  left: 37%;
   z-index: 200;
+  border: 5px white solid;
+  padding: 0.2em;
 }
 #cinemas {
   margin-top: 6rem !important;

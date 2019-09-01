@@ -162,29 +162,36 @@ body {
         background-size    : cover;
         background-position: center;
         background-repeat  : no-repeat;
+        position           : relative;
 
 
     }
 
     .overlay-div {
         background-color: #7B9AC9;
+        opacity: 0.3;
         height          : 100%;
-        opacity         : 0.3;
         z-index         : 100;
 
-        .offer-box {
-            color   : white;
-            position: absolute;
-            top     : 50%;
-            right   : 50%;
-            z-index : 200;
-        }
+    }
+
+    .offer-box h3 {
+        font-weight: 700;
+        color   : white;
+        position: absolute;
+        font-size: 100px;
+        top     : 33%;
+        left   : 37%;
+        z-index : 200;
+        border: 5px white solid;
+        padding: 0.2em;
     }
 }
 
 #cinemas {
-    margin-top: 6rem !important;
+    margin-top   : 6rem !important;
     margin-bottom: 2rem !important;
+
     .title-row {
         position: relative;
     }
@@ -238,19 +245,19 @@ body {
 }
 
 #one-cinemas-logo {
-    position                          : relative;
-    width                             : 280px;
-    padding                           : 40px;
-    margin                            : 0 auto;
-    background                        : white;
+    position  : relative;
+    width     : 280px;
+    padding   : 40px;
+    margin    : 0 auto;
+    background: white;
 }
 
 #food-court-logo {
-    position                          : relative;
-    width                             : 200px;
-    padding                           : 15px;
-    margin                            : 0 auto;
-    background                        : white;
+    position  : relative;
+    width     : 200px;
+    padding   : 15px;
+    margin    : 0 auto;
+    background: white;
 }
 
 #food-court-logo img {
